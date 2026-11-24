@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Personal · Ilustración</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <!-- CABECERA Y NAVEGACIÓN -->
+  <header>
+    <h1>Portafolio de Ilustración</h1>
+    <p>Narrativas visuales, personajes y atmósferas en tonos morados y dorados.</p>
+    <nav>
+      <a href="../../index.html">Volver al equipo</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- A · IDENTIDAD CREATIVA -->
+    <section id="identidad">
+      <h2>Identidad creativa</h2>
+      <div class="perfil-contenedor">
+        <figure class="foto-perfil">
+          <img src="imagenes/perfil.jpeg" alt="Retrato de perfil frente a la cámara con vestimenta oscura">
+          <figcaption>Diseñadora y artista visual · Especialidad en Ilustración</figcaption>
+        </figure>
+        <div class="texto-identidad">
+          <p>
+            Soy estudiante de <strong>Diseño Multimedia</strong> enfocada en la <em>ilustración</em>
+            como medio principal para construir mundos simbólicos, personajes expresivos y piezas
+            cargadas de atmósfera.
+          </p>
+          <p>
+            Me interesa desarrollar ilustraciones conceptuales, diseño de personajes, arte editorial
+            y composiciones visuales donde el contraste entre luces suaves, sombras profundas y
+            detalles dorados cuente una historia propia.
+          </p>
+          <ul>
+            <li>Ilustración digital y creación de personajes.</li>
+            <li>Estudios de luz, color y atmósfera emocional.</li>
+            <li>Arte conceptual aplicado a proyectos multimedia.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- B · MIS TRABAJOS CREATIVOS -->
+    <section id="proyectos">
+      <h2>Mis trabajos creativos</h2>
+      <p>
+        A continuación presento dos propuestas ilustrativas que reflejan distintos enfoques de
+        expresión, color y narrativa dentro de mi trabajo.
+      </p>
+
+      <div class="grid-proyectos">
+        <article class="tarjeta-proyecto">
+          <figure>
+            <img src="imagenes/dios.jpg" alt="Ilustración de figura estilizada con cabello claro y manto morado con detalles dorados">
+            <figcaption>
+              <h3>Dios</h3>
+              <p>
+                <strong>Descripción:</strong> Ilustración de figura estilizada que juega con la
+                simetría, la presencia escénica y el contraste entre tonos morados y acentos dorados.
+              </p>
+              <p>
+                <strong>Técnica / herramienta:</strong> Ilustración digital con trabajo de color y detalles ornamentales.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <figure>
+            <img src="imagenes/lloro.png" alt="Ilustración de personaje de cabello oscuro sobre fondo azul profundo y sombras">
+            <figcaption>
+              <h3>Lloro</h3>
+              <p>
+                <strong>Descripción:</strong> Pieza centrada en la emoción contenida, la postura del
+                personaje y una atmósfera íntima dominada por sombras y matices oscuros.
+              </p>
+              <p>
+                <strong>Técnica / herramienta:</strong> Ilustración digital con enfoque en expresión y claroscuro.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- C · EXPERIENCIA MULTIMEDIA -->
+    <section id="multimedia">
+      <h2>Experiencia multimedia</h2>
+      <p>
+        Estos recursos acompañan mi perfil ilustrativo: el audio ayuda a ambientar el ritmo y la
+        introspección de las piezas, mientras que el video complementa la presentación visual del
+        proceso y las ideas creativas.
+      </p>
+
+      <div class="bloques-media">
+        <div class="media-item">
+          <h3>Audio ambiental</h3>
+          <audio controls>
+            <source src="audio/ambiente.mp3" type="audio/mpeg">
+            Tu navegador no soporta el reproductor de audio.
+          </audio>
+          <p>
+            <strong>Relación con mi perfil:</strong> Aporta una atmósfera sonora suave que acompaña
+            la contemplación de las ilustraciones y el tono reflexivo del portafolio.
+          </p>
+        </div>
+
+        <div class="media-item">
+          <h3>Video de presentación</h3>
+          <video controls width="100%">
+            <source src="videos/presentacion.mp4" type="video/mp4">
+            Tu navegador no soporta el reproductor de video.
+          </video>
+          <p>
+            <strong>Relación con mi perfil:</strong> Muestra en movimiento parte del enfoque visual y
+            el recorrido de mis propuestas creativas en ilustración.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPOSICIÓN CON CANVAS -->
+    <section id="lienzo-canvas">
+      <h2>Composición con Canvas</h2>
+      <p>
+        Espacio reservado para la composición gráfica desarrollada con HTML5 Canvas / diseño de
+        referencia en Canva.
+      </p>
+      <div class="marco-canvas">
+        <canvas id="canvasIlustracion" width="760" height="320">
+          Tu navegador no soporta el elemento canvas.
+        </canvas>
+      </div>
+    </section>
+
+    <!-- D · FORMULARIO DE CONTACTO -->
+    <section id="contacto">
+      <h2>Formulario de contacto</h2>
+      <p class="aviso-demo">
+        <strong>Aviso:</strong> Este formulario es <strong>demostrativo</strong>; no guarda datos ni
+        envía mensajes reales y debe probarse únicamente con datos ficticios[cite: 17].
+      </p>
+
+      <form class="formulario-contacto" action="#" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre del visitante</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej. Valentina Gómez" required>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="Ej. correo@ejemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="tipo-proyecto">Tipo de proyecto de interés</label>
+          <select id="tipo-proyecto" name="tipo-proyecto" required>
+            <option value="">Selecciona una opción</option>
+            <option value="ilustracion-personajes">Ilustración de personajes</option>
+            <option value="arte-editorial">Arte editorial / portada</option>
+            <option value="pieza-conceptual">Ilustración conceptual</option>
+            <option value="colaboracion-multimedia">Colaboración multimedia</option>
+          </select>
+        </div>
+
+        <fieldset class="campo">
+          <legend>Modalidad de colaboración</legend>
+          <label class="opcion-radio">
+            <input type="radio" name="modalidad" value="remota" required>
+            Remota
+          </label>
+          <label class="opcion-radio">
+            <input type="radio" name="modalidad" value="presencial">
+            Presencial
+          </label>
+          <label class="opcion-radio">
+            <input type="radio" name="modalidad" value="hibrida">
+            Híbrida
+          </label>
+        </fieldset>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí un mensaje ficticio sobre tu propuesta..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje (demostrativo)</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- E · NAVEGACIÓN / PIE DE PÁGINA -->
+  <footer>
+    <p>Página personal de Ilustración · Prototipo en desarrollo</p>
+    <a href="../../index.html">Volver al equipo</a>
+  </footer>
+
+</body>
+<script src="canvas.js"></script>
+
+</html>

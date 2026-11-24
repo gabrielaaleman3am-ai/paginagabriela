@@ -1,0 +1,306 @@
+/* ESTILOS GENERALES - MORADO OSCURO SUAVE Y DORADO */
+body {
+  background-color: #151024;
+  color: #f4effc;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.65;
+}
+
+/* CABECERA */
+header {
+  background-color: #241b3d;
+  border-bottom: 2px solid #d4af37;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  color: #f3d26b;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 0 0 16px 0;
+  color: #dcd2f0;
+}
+
+header nav a,
+footer a {
+  display: inline-block;
+  background-color: #352759;
+  color: #f7dc84;
+  text-decoration: none;
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: 1px solid #d4af37;
+  font-weight: bold;
+}
+
+header nav a:hover,
+footer a:hover {
+  background-color: #d4af37;
+  color: #151024;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: #211838;
+  border: 1px solid #59448a;
+  border-radius: 14px;
+  padding: 26px;
+  margin-bottom: 28px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #f0cf65;
+  border-bottom: 1px solid #6d54a8;
+  padding-bottom: 8px;
+}
+
+h3 {
+  color: #e9c963;
+  margin-top: 0;
+}
+
+/* A · IDENTIDAD CREATIVA */
+.perfil-contenedor {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-top: 16px;
+}
+
+.foto-perfil {
+  margin: 0;
+  text-align: center;
+  background-color: #19122b;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d4af37;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.texto-identidad ul {
+  padding-left: 20px;
+}
+
+.texto-identidad li {
+  margin-bottom: 6px;
+  color: #e6ddf7;
+}
+
+/* B · MIS TRABAJOS CREATIVOS */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.tarjeta-proyecto {
+  background-color: #19122b;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.tarjeta-proyecto figure {
+  margin: 0;
+}
+
+.tarjeta-proyecto img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.tarjeta-proyecto figcaption h3 {
+  margin-bottom: 8px;
+}
+
+.tarjeta-proyecto figcaption p {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: #e6ddf7;
+}
+
+/* C · EXPERIENCIA MULTIMEDIA */
+.bloques-media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.media-item {
+  background-color: #19122b;
+  border: 1px solid #6d54a8;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.media-item audio {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.media-item video {
+  border-radius: 8px;
+  border: 1px solid #d4af37;
+  margin: 10px 0;
+}
+
+/* CANVAS */
+.marco-canvas {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  background-color: #19122b;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #d4af37;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  background-color: #120d1f;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+}
+
+/* CONTROLES DEL LABORATORIO GENERATIVO */
+.controles-canvas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn-canvas {
+  background-color: #2c204a;
+  color: #f4effc;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-canvas:hover,
+.btn-canvas.activo {
+  background-color: #d4af37;
+  color: #151024;
+}
+
+/* D · FORMULARIO DE CONTACTO */
+.aviso-demo {
+  background-color: #2c204a;
+  border-left: 4px solid #f0cf65;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #f6e7b2;
+}
+
+.formulario-contacto {
+  margin-top: 18px;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 6px;
+  color: #f3d26b;
+  font-weight: bold;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #161026;
+  color: #f4effc;
+  border: 1px solid #755bb5;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: inherit;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #f0cf65;
+}
+
+fieldset.campo {
+  border: 1px solid #755bb5;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+fieldset.campo legend {
+  color: #f3d26b;
+  font-weight: bold;
+  padding: 0 6px;
+}
+
+.opcion-radio {
+  display: inline-block !important;
+  margin-right: 18px;
+  font-weight: normal !important;
+  color: #f4effc !important;
+}
+
+.btn-enviar {
+  background-color: #d4af37;
+  color: #151024;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background-color: #f0cf65;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: #241b3d;
+  border-top: 2px solid #d4af37;
+  text-align: center;
+  padding: 24px 20px;
+  color: #dcd2f0;
+}
+
+footer p {
+  margin: 0 0 12px 0;
+}
