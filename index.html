@@ -5,25 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio Personal · Ilustración</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
-</head>
+  
+  </head>
 
 <body>
 
-  <!-- CABECERA Y NAVEGACIÓN -->
-  <header>
-    <h1>Portafolio de Ilustración</h1>
-    <p>Narrativas visuales, personajes y atmósferas en tonos morados y dorados.</p>
-    <nav>
-      <a href="../../index.html">Volver al equipo</a>
-    </nav>
+ <!-- BARRA SUPERIOR Y PORTADA PRINCIPAL (HERO) -->
+  <header class="encabezado-principal">
+    <div class="barra-nav">
+      <div class="marca-personal">✦ ATELIER DE ILUSTRACIÓN</div>
+      <nav class="menu-enlaces">
+        <a href="#identidad">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#lienzo-canvas">Canvas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="../../index.html" class="enlace-equipo">Volver al equipo</a>
+      </nav>
+    </div>
+
+    <div class="hero-portafolio">
+      <span class="etiqueta-hero">PORTAFOLIO CREATIVO · ILUSTRACIÓN</span>
+      <h1>
+        <span class="adorno-titulo">✧</span>
+        Gabriela <span class="resaltado-dorado">Ilustración</span>
+        <span class="adorno-titulo">✧</span>
+      </h1>
+      <p class="subtitulo-hero">
+        Estudiante de Diseño Multimedia · Narrativa visual, personajes y atmósferas sensibles
+      </p>
+      <div class="acciones-hero">
+        <a href="#proyectos" class="btn-dorado">Ver mis ilustraciones</a>
+      </div>
+    </div>
   </header>
 
   <main>
 
     <!-- A · IDENTIDAD CREATIVA -->
     <section id="identidad">
-      <h2>Identidad creativa</h2>
+     <h2><span class="figura-titulo">◈</span> Sobre mí · Identidad creativa</h2>
       <div class="perfil-contenedor">
         <figure class="foto-perfil">
           <img src="imagenes/perfil.jpeg" alt="Retrato de perfil frente a la cámara con vestimenta oscura">
@@ -51,7 +76,7 @@
 
     <!-- B · MIS TRABAJOS CREATIVOS -->
     <section id="proyectos">
-      <h2>Mis trabajos creativos</h2>
+     <h2><span class="figura-titulo">❖</span> Mis trabajos creativos</h2>
       <p>
         A continuación presento dos propuestas ilustrativas que reflejan distintos enfoques de
         expresión, color y narrativa dentro de mi trabajo.
@@ -62,7 +87,7 @@
           <figure>
             <img src="imagenes/dios.jpg" alt="Ilustración de figura estilizada con cabello claro y manto morado con detalles dorados">
             <figcaption>
-              <h3>Dios</h3>
+              <h3><span class="figura-obra">✦</span> Dios</h3>
               <p>
                 <strong>Descripción:</strong> Ilustración de figura estilizada que juega con la
                 simetría, la presencia escénica y el contraste entre tonos morados y acentos dorados.
@@ -78,7 +103,7 @@
           <figure>
             <img src="imagenes/lloro.png" alt="Ilustración de personaje de cabello oscuro sobre fondo azul profundo y sombras">
             <figcaption>
-              <h3>Lloro</h3>
+              <h3><span class="figura-obra">✦</span> Lloro</h3>
               <p>
                 <strong>Descripción:</strong> Pieza centrada en la emoción contenida, la postura del
                 personaje y una atmósfera íntima dominada por sombras y matices oscuros.
@@ -160,27 +185,27 @@
       </div>
 
     </section>
+ <!-- D · canva -->
+<section class="tarjeta-seccion" id="lienzo-canvas">
+  <h2>Composición con Canvas</h2>
+  <p>
+    Espacio reservado para la composición gráfica desarrollada con HTML5 Canvas / diseño de
+    referencia en Canva.
+  </p>
 
-    <!-- COMPOSICIÓN CON CANVAS -->
-    <section id="lienzo-canvas">
-      <h2>Composición con Canvas</h2>
-      <p>
-        Espacio reservado para la composición gráfica desarrollada con HTML5 Canvas / diseño de
-        referencia en Canva.
-      </p>
-    <div class="marco-canvas">
-        <canvas id="canvasIlustracion" width="760" height="320">
-          Tu navegador no soporta el elemento canvas.
-        </canvas>
-      </div>
+  <div class="marco-canvas">
+    <canvas id="canvasIlustracion" width="900" height="380">
+      Tu navegador no soporta el elemento canvas.
+    </canvas>
+  </div>
 
-      <div class="controles-canvas">
-        <button type="button" id="btnPaleta1" class="btn-canvas">Jardín Celestial</button>
-        <button type="button" id="btnPaleta2" class="btn-canvas">Jardín de Amatista</button>
-        <button type="button" id="btnGenerar" class="btn-canvas">Generar composición</button>
-        <button type="button" id="btnGuardar" class="btn-canvas">Exportar PNG</button>
-      </div>
-    </section>
+  <div class="controles-canvas">
+    <button type="button" id="btnPaleta1" class="btn-canvas activo">Jardín Celestial</button>
+    <button type="button" id="btnPaleta2" class="btn-canvas">Jardín de Amatista</button>
+    <button type="button" id="btnGenerar" class="btn-canvas">Generar composición</button>
+    <button type="button" id="btnGuardar" class="btn-canvas">Exportar PNG</button>
+  </div>
+</section>
 
     <!-- D · FORMULARIO DE CONTACTO -->
     <section id="contacto">

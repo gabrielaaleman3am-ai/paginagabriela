@@ -1,6 +1,6 @@
 /* ESTILOS GENERALES - MORADO OSCURO SUAVE Y DORADO */
 body {
-  background-color: #151024;
+  background: linear-gradient(180deg, #151024 0%, #1b142e 55%, #120d1f 100%);
   color: #f4effc;
   font-family: "Trebuchet MS", Arial, sans-serif;
   margin: 0;
@@ -8,9 +8,9 @@ body {
   line-height: 1.65;
 }
 
-/* CABECERA */
+/* CABECERA CON DEGRADADO SUAVE */
 header {
-  background-color: #241b3d;
+  background: linear-gradient(135deg, #241b3d 0%, #312352 55%, #1d1533 100%);
   border-bottom: 2px solid #d4af37;
   padding: 32px 20px;
   text-align: center;
@@ -30,7 +30,7 @@ header p {
 header nav a,
 footer a {
   display: inline-block;
-  background-color: #352759;
+  background: linear-gradient(135deg, #352759 0%, #473475 100%);
   color: #f7dc84;
   text-decoration: none;
   padding: 9px 18px;
@@ -41,7 +41,7 @@ footer a {
 
 header nav a:hover,
 footer a:hover {
-  background-color: #d4af37;
+  background: linear-gradient(135deg, #d4af37 0%, #f0cf65 100%);
   color: #151024;
 }
 
@@ -53,11 +53,12 @@ main {
 }
 
 section {
-  background-color: #211838;
+  background: linear-gradient(160deg, #231a3b 0%, #1c1430 100%);
   border: 1px solid #59448a;
   border-radius: 14px;
   padding: 26px;
   margin-bottom: 28px;
+  box-shadow: 0 8px 22px rgba(9, 6, 18, 0.35);
 }
 
 h2 {
@@ -84,7 +85,7 @@ h3 {
 .foto-perfil {
   margin: 0;
   text-align: center;
-  background-color: #19122b;
+  background: linear-gradient(180deg, #1d1533 0%, #161026 100%);
   padding: 12px;
   border-radius: 12px;
   border: 1px solid #d4af37;
@@ -94,6 +95,7 @@ h3 {
   width: 100%;
   height: 220px;
   object-fit: cover;
+  object-position: center 15%;
   border-radius: 8px;
 }
 
@@ -115,7 +117,7 @@ h3 {
 }
 
 .tarjeta-proyecto {
-  background-color: #19122b;
+  background: linear-gradient(165deg, #1d1533 0%, #151024 100%);
   border: 1px solid #d4af37;
   border-radius: 12px;
   padding: 16px;
@@ -127,9 +129,9 @@ h3 {
 
 .tarjeta-proyecto img {
   width: 100%;
-  height: 360px;
+  height: 340px;
   object-fit: cover;
-  object-position: center 15%; /* Enfoca más arriba para priorizar la cara y el cabello */
+  object-position: center 15%;
   border-radius: 8px;
   margin-bottom: 12px;
 }
@@ -146,7 +148,7 @@ h3 {
 
 /* C · EXPERIENCIA MULTIMEDIA */
 .bloque-audio {
-  background-color: #19122b;
+  background: linear-gradient(135deg, #1d1533 0%, #271c45 100%);
   border: 1px solid #6d54a8;
   border-radius: 12px;
   padding: 16px 20px;
@@ -159,6 +161,12 @@ h3 {
   margin: 8px 0;
 }
 
+.bloque-audio p {
+  margin: 8px 0;
+  color: #e6ddf7;
+  font-size: 0.96rem;
+}
+
 .grid-videos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -166,7 +174,7 @@ h3 {
 }
 
 .tarjeta-video {
-  background-color: #19122b;
+  background: linear-gradient(165deg, #1d1533 0%, #151024 100%);
   border: 1px solid #d4af37;
   border-radius: 12px;
   padding: 16px;
@@ -218,7 +226,7 @@ h3 {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  background-color: #19122b;
+  background: linear-gradient(135deg, #1d1533 0%, #161026 100%);
   padding: 14px;
   border-radius: 12px;
   border: 1px solid #d4af37;
@@ -226,30 +234,29 @@ h3 {
 
 canvas {
   max-width: 100%;
-  height: auto;
   background-color: #120d1f;
-  border: 1px solid #d4af37;
+  border: 1px dashed #e6c35c;
   border-radius: 8px;
 }
-
-/* CONTROLES DEL LABORATORIO GENERATIVO */
 .controles-canvas {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   margin-top: 16px;
 }
 
 .btn-canvas {
-  background-color: #2c204a;
+  background-color: #24193d;
   color: #f4effc;
   border: 1px solid #d4af37;
   border-radius: 8px;
-  padding: 10px 16px;
-  font-family: inherit;
-  font-weight: bold;
+  padding: 9px 16px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .btn-canvas:hover,
@@ -257,10 +264,9 @@ canvas {
   background-color: #d4af37;
   color: #151024;
 }
-
 /* D · FORMULARIO DE CONTACTO */
 .aviso-demo {
-  background-color: #2c204a;
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.16) 0%, rgba(44, 32, 74, 0.85) 100%);
   border-left: 4px solid #f0cf65;
   padding: 12px 16px;
   border-radius: 8px;
@@ -323,7 +329,7 @@ fieldset.campo legend {
 }
 
 .btn-enviar {
-  background-color: #d4af37;
+  background: linear-gradient(135deg, #d4af37 0%, #f0cf65 100%);
   color: #151024;
   border: none;
   padding: 12px 22px;
@@ -333,12 +339,12 @@ fieldset.campo legend {
 }
 
 .btn-enviar:hover {
-  background-color: #f0cf65;
+  background: #f5da7e;
 }
 
 /* PIE DE PÁGINA */
 footer {
-  background-color: #241b3d;
+  background: linear-gradient(180deg, #241b3d 0%, #171126 100%);
   border-top: 2px solid #d4af37;
   text-align: center;
   padding: 24px 20px;

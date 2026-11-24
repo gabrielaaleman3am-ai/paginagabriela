@@ -75,6 +75,7 @@ if (canvas && ctx) {
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, W, H);
 
+
     // Resplandor detrás de la rosa.
     const luz = ctx.createRadialGradient(
       575, 185, 5,
