@@ -2,6 +2,7 @@
 const canvas = document.getElementById("canvasIlustracion");
 const ctx = canvas?.getContext("2d");
 
+
 if (canvas && ctx) {
   const W = 900;
   const H = 380;
