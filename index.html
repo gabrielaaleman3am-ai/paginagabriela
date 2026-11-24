@@ -94,38 +94,71 @@
 
     <!-- C · EXPERIENCIA MULTIMEDIA -->
     <section id="multimedia">
-      <h2>Experiencia multimedia</h2>
+      <h2>Experiencia multimedia: Inspiración y Movimiento</h2>
       <p>
-        Estos recursos acompañan mi perfil ilustrativo: el audio ayuda a ambientar el ritmo y la
-        introspección de las piezas, mientras que el video complementa la presentación visual del
-        proceso y las ideas creativas.
+        La ilustración cobra una dimensión distinta cuando dialoga con el sonido y el movimiento.
+        Estos recursos audiovisuales representan mis referentes creativos: piezas de animación y
+        proceso artístico que alimentan mi forma de entender el color, el ritmo y la narrativa visual.
       </p>
 
-      <div class="bloques-media">
-        <div class="media-item">
-          <h3>Audio ambiental</h3>
-          <audio controls>
-            <source src="audio/ambiente.mp3" type="audio/mpeg">
-            Tu navegador no soporta el reproductor de audio.
-          </audio>
-          <p>
-            <strong>Relación con mi perfil:</strong> Aporta una atmósfera sonora suave que acompaña
-            la contemplación de las ilustraciones y el tono reflexivo del portafolio.
-          </p>
-        </div>
-
-        <div class="media-item">
-          <h3>Video de presentación</h3>
-          <video controls width="100%">
-            <source src="videos/presentacion.mp4" type="video/mp4">
-            Tu navegador no soporta el reproductor de video.
-          </video>
-          <p>
-            <strong>Relación con mi perfil:</strong> Muestra en movimiento parte del enfoque visual y
-            el recorrido de mis propuestas creativas en ilustración.
-          </p>
-        </div>
+      <!-- Reproductor de Audio requerido por la guía -->
+      <div class="bloque-audio">
+        <h3>Atmósfera sonora de estudio</h3>
+        <audio controls>
+          <source src="audio/inspirador.m4a" type="audio/mpeg">
+          Tu navegador no soporta el reproductor de audio.
+        </audio>
+       <p>
+          <strong>Relación con mi perfil:</strong> Escuchar <em>"Promise"</em> de Laufey me inspira
+          profundamente mientras dibujo porque su melodía suave, íntima y melancólica abre un espacio
+          de calma y conexión emocional.
+        </p>
+        <p>
+          El ritmo pausado y la sensibilidad de la canción me ayudan a enfocarme en los detalles,
+          dejar fluir ideas más sensibles y darles mayor carga expresiva y atmosférica a mis
+          ilustraciones.
+        </p>
       </div>
+
+      <!-- Cuadrícula de los 2 videos con su vista real y controles DOM -->
+      <div class="grid-videos">
+        
+        <!-- Video 1 -->
+        <article class="tarjeta-video">
+          <h3>Inspiración en color y escena</h3>
+          <video id="video1" controls preload="metadata">
+            <source src="videos/videospresentacion.mp4" type="video/mp4">
+            No se pudo cargar el video.
+          </video>
+          <div class="controles-dom">
+            <button type="button" onclick="document.getElementById('video1').play()">▶ Reproducir</button>
+            <button type="button" onclick="document.getElementById('video1').pause()">⏸ Pausar</button>
+          </div>
+          <p>
+            <strong>Referencia creativa:</strong> Muestra la calidez del color, la composición de
+            personajes y la vitalidad visual que inspiran mis ilustraciones.
+          </p>
+        </article>
+
+        <!-- Video 2 -->
+        <article class="tarjeta-video">
+          <h3>Animación y fluidez del trazo</h3>
+          <video id="video2" controls preload="metadata">
+            <source src="videos/videospresentacion1.mp4" type="video/mp4">
+            No se pudo cargar el video.
+          </video>
+          <div class="controles-dom">
+            <button type="button" onclick="document.getElementById('video2').play()">▶ Reproducir</button>
+            <button type="button" onclick="document.getElementById('video2').pause()">⏸ Pausar</button>
+          </div>
+          <p>
+            <strong>Referencia creativa:</strong> Explora cómo la animación da vida al dibujo y me
+            motiva a dotar de expresividad y movimiento cada pose ilustrada.
+          </p>
+        </article>
+
+      </div>
+
     </section>
 
     <!-- COMPOSICIÓN CON CANVAS -->
