@@ -1,17 +1,18 @@
 /* ESTILOS GENERALES - MORADO OSCURO SUAVE Y DORADO */
 body {
-  background: linear-gradient(180deg, #151024 0%, #1b142e 55%, #120d1f 100%);
+  background: linear-gradient(180deg, #fff81e 0%, #41007d 55%, #c800ff 100%);
   color: #f4effc;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 1.12rem;
   margin: 0;
-  padding: 0;
+  padding: 1;
   line-height: 1.65;
 }
 
 /* CABECERA CON DEGRADADO SUAVE */
 header {
-  background: linear-gradient(135deg, #241b3d 0%, #312352 55%, #1d1533 100%);
-  border-bottom: 2px solid #d4af37;
+  background: linear-gradient(135deg, #410086 0%, #312352 55%, #1d1533 100%);
+  border-bottom: 2px solid #cda700;
   padding: 32px 20px;
   text-align: center;
 }
@@ -24,7 +25,7 @@ header h1 {
 
 header p {
   margin: 0 0 16px 0;
-  color: #dcd2f0;
+  color: #cbb0ff;
 }
 
 header nav a,
@@ -45,34 +46,63 @@ footer a:hover {
   color: #151024;
 }
 
-/* CONTENEDOR PRINCIPAL */
 main {
+  display: block;
   max-width: 960px;
   margin: 32px auto;
   padding: 0 20px;
 }
 
 section {
-  background: linear-gradient(160deg, #231a3b 0%, #1c1430 100%);
-  border: 1px solid #59448a;
+  display: block;
+  width: 100%;
+  background: linear-gradient(160deg, #241a3d 0%, #1b1330 65%, #161026 100%);
+  border: 1px solid #5c468f;
   border-radius: 14px;
   padding: 26px;
   margin-bottom: 28px;
-  box-shadow: 0 8px 22px rgba(9, 6, 18, 0.35);
+  box-shadow: 0 10px 26px rgba(8, 5, 18, 0.38);
 }
 
-h2 {
-  margin-top: 0;
-  color: #f0cf65;
-  border-bottom: 1px solid #6d54a8;
-  padding-bottom: 8px;
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 18px;
+  align-items: stretch;
 }
 
-h3 {
-  color: #e9c963;
-  margin-top: 0;
+.tarjeta-proyecto {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
+.tarjeta-proyecto figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+.tarjeta-proyecto img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.grid-proyectos .tarjeta-proyecto:nth-child(3) {
+  grid-column: 1 / -1;
+  height: auto;
+}
+
+.grid-proyectos .tarjeta-proyecto:nth-child(3) img {
+  height: 260px;
+  object-position: center 25%;
+}
 /* A · IDENTIDAD CREATIVA */
 .perfil-contenedor {
   display: grid;
@@ -105,7 +135,14 @@ h3 {
 
 .texto-identidad li {
   margin-bottom: 6px;
-  color: #e6ddf7;
+  color: #f3c4ff;
+}
+section h2,
+section h3,
+.bloque-audio h3,
+.tarjeta-video h3,
+#lienzo-canvas h2 {
+  color: #f3d26b;
 }
 
 /* B · MIS TRABAJOS CREATIVOS */
@@ -145,7 +182,51 @@ h3 {
   font-size: 0.95rem;
   color: #e6ddf7;
 }
+/* B · MIS TRABAJOS CREATIVOS: 2 ARRIBA Y 1 HORIZONTAL ANCHO ABAJO */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 18px;
+}
 
+/* La tercera tarjeta ocupa las dos columnas completas abajo */
+.grid-proyectos .tarjeta-proyecto:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+/* En el 3.er proyecto horizontal: imagen ancha en formato panorámico */
+.grid-proyectos .tarjeta-proyecto:nth-child(3) img {
+  height: 350px;
+  object-fit: cover;
+  object-position: center 25;
+}
+
+/* Si quieres que en pantallas grandes el texto de la 3.ª tarjeta se acomode cómodo */
+@media (min-width: 721px) {
+  .grid-proyectos .tarjeta-proyecto:nth-child(3) figcaption {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 20px;
+    align-items: start;
+  }
+
+  .grid-proyectos .tarjeta-proyecto:nth-child(3) figcaption h3 {
+    grid-column: 1 / -1;
+    margin-bottom: 4px;
+  }
+}
+
+/* En celulares sigue siendo una sola columna limpia */
+@media (max-width: 720px) {
+  .grid-proyectos .tarjeta-proyecto:nth-child(3) {
+    grid-column: auto;
+  }
+
+  .grid-proyectos .tarjeta-proyecto:nth-child(3) img {
+    height: 210px;
+  }
+}
 /* C · EXPERIENCIA MULTIMEDIA */
 .bloque-audio {
   background: linear-gradient(135deg, #1d1533 0%, #271c45 100%);
@@ -163,33 +244,56 @@ h3 {
 
 .bloque-audio p {
   margin: 8px 0;
-  color: #e6ddf7;
+  color: #fdffcd;
   font-size: 0.96rem;
 }
 
+/* Contenedor morado suave para los dos videos, centrado y acorde al resto */
 .grid-videos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+  gap: 20px;
+  margin-top: 28px;
+  margin-bottom: 42px;
+  background: linear-gradient(135deg, #271c45 0%, #1d1533 65%, #2a1e4a 100%);
+  border: 1px solid #6d54a8;
+  border-radius: 12px;
+  padding: 18px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 6px 18px rgba(9, 5, 19, 0.32);
 }
 
+/* Cada tarjeta conserva su borde dorado/amarillo intacto */
 .tarjeta-video {
   background: linear-gradient(165deg, #1d1533 0%, #151024 100%);
   border: 1px solid #d4af37;
   border-radius: 12px;
-  padding: 16px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* Recuadro superior dentro de cada tarjeta de video */
+.tarjeta-video h3 {
+  background: linear-gradient(135deg, #2d204f 0%, #1d1533 100%);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 0 0 12px 0;
+  color: #f4d46c;
+  font-size: 1.05rem;
+}
+
+/* Marco uniforme para que el video no se vea flotando ni con fondo blanco suelto */
 .tarjeta-video video {
   width: 100%;
   height: 230px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid #d4af37;
-  background-color: #120d1f;
+  background: linear-gradient(180deg, #1b1330 0%, #110c1f 100%);
 }
 
 .controles-dom {
@@ -220,7 +324,6 @@ h3 {
   font-size: 0.94rem;
   color: #e6ddf7;
 }
-
 /* CANVAS */
 .marco-canvas {
   display: flex;
@@ -248,7 +351,7 @@ canvas {
 
 .btn-canvas {
   background-color: #24193d;
-  color: #f4effc;
+  color: #cbc81e;
   border: 1px solid #d4af37;
   border-radius: 8px;
   padding: 9px 16px;
